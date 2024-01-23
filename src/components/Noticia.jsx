@@ -8,7 +8,7 @@ import Grid from "@mui/material/Grid"
 
 const Noticia = ({noticia}) => {
 
-  const { urlToImage, url, title, description, source } = noticia
+  const { urlToImage, url, title, description, author } = noticia
   return (
     <Grid item md={6} lg={4}>
       <Card>
@@ -23,7 +23,7 @@ const Noticia = ({noticia}) => {
 
        <CardContent>
           <Typography variant="body1" color="error">
-            {source.name}
+            {author}
           </Typography>
           <Typography variant="h5" component="div">
             {title}
